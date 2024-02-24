@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:height="@dimen/d_8"
+        android:drawable="@color/gray_200"/>
+    <item android:id="@android:id/progress" android:height="@dimen/d_8">
+        <clip android:drawable="@color/main" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:id="@+id/home"
+    android:layout_width="@dimen/d_52"
+    android:layout_height="@dimen/d_52"
+    android:layout_gravity="center"
+    android:adjustViewBounds="true"
+    android:background="@android:color/transparent"
+    android:foreground="?android:selectableItemBackground"
+    android:scaleType="centerInside"
+    android:src="@drawable/kd_logo_white"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".Fragment.OAuth.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/kd_logo_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="64dp"
+                android:paddingRight="64dp">
+
+                <vn.nip.kido.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/enter_phone_num"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_28"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <vn.nip.kido.IControl.IEdittext
+                    android:id="@+id/edt_phone"
+                    android:layout_width="420dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_16"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/phone_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:padding="@dimen/d_8"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/d_32"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <View
+                    android:layout_width="420dp"
+                    android:layout_height="@dimen/d_1"
+                    android:layout_marginBottom="@dimen/d_24"
+                    android:background="@color/white" />
+
+                <vn.nip.kido.IControl.IButton
+                    android:id="@+id/btn_signin"
+
+                    android:layout_width="420dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/background_button"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:text="@string/signin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_32"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <vn.nip.kido.IControl.ITextView
+                    android:id="@+id/txt_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_12"
+                    android:text="@string/signup_underline"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_28"
+                    app:fontName="BRYANTLG_BOLD" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_16">
+
+                <ImageView
+                    android:layout_width="@dimen/d_60"
+                    android:layout_height="@dimen/d_60"
+                    android:layout_marginRight="@dimen/d_4"
+                    android:src="@drawable/ic_call_white" />
+
+                <vn.nip.kido.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_8"
+                    android:text="@string/support_customer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_28"
+                    app:fontName="BRYANTLG_NORMAL" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

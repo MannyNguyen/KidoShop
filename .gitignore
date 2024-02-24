@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/.idea
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.idea/caches/build_file_checksums.ser
+.idea/misc.xml
+
+.idea/workspace.xml
+app/release/kido_shop_release.apk

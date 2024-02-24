@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.kido.shop.IControl.ICardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/d_8"
+    android:layout_marginBottom="@dimen/d_8"
+    android:layout_marginLeft="@dimen/d_4"
+    android:layout_marginRight="@dimen/d_4"
+    android:elevation="@dimen/d_4"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/d_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:padding="@dimen/d_4"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:padding="@dimen/d_4">
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_gift_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s_16"
+                android:minLines="1"
+                android:maxLines="1"
+                android:textColor="@color/main"
+                app:fontName="BRYANTLG_BOLD"/>
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:textSize="@dimen/s_12"
+                android:textColor="@color/main_black"
+                app:fontName="BRYANTLG_NORMAL"/>
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_gift_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/s_14"
+                app:fontName="BRYANTLG_NORMAL"/>
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_gift_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/s_12"
+                app:fontName="BRYANTLG_NORMAL"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/d_1"
+            android:layout_height="match_parent"
+            android:background="@drawable/dash_line"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/d_6"
+                    android:visibility="visible">
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:id="@+id/txt_kpoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/s_16"
+                        android:textColor="@color/main"
+                        app:fontName="BRYANTLG_BOLD"/>
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kpoint"
+                        android:textSize="@dimen/s_16"
+                        android:textColor="@color/main"
+                        app:fontName="BRYANTLG_BOLD"/>
+
+                    <vn.kido.shop.IControl.IButton
+                        android:id="@+id/btn_receive_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d_28"
+                        android:layout_marginTop="@dimen/d_8"
+                        android:layout_marginLeft="@dimen/d_16"
+                        android:layout_marginRight="@dimen/d_16"
+                        android:text="@string/change_gift"
+                        android:textSize="@dimen/s_14"
+                        android:textColor="@color/white"
+                        app:fontName="BRYANTLG_BOLD"
+                        android:textAllCaps="false"
+                        android:background="@drawable/receive_gift_bg"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</vn.kido.shop.IControl.ICardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_36"
+    android:background="@color/main"
+    android:foreground="?android:selectableItemBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/d_6"
+        android:background="@drawable/background_white_radius_4">
+
+        <ImageButton
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/d_44"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/background_gray_200_radius_4"
+            android:padding="@dimen/d_8"
+            android:scaleType="centerInside"
+            android:clickable="false"
+            android:src="@drawable/search_icon" />
+
+    </FrameLayout>
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/edt_key_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/d_8"
+        android:text="@string/search_product"
+        android:textColor="@color/gray_400"
+        android:textSize="@dimen/s_16"
+        android:lines="1"
+        app:fontName="BRYANTLG_NORMAL"/>
+
+</FrameLayout>

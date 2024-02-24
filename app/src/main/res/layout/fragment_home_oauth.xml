@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragment.OAuth.HomeOAuthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d_100"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/kd_logo_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d_48"
+                android:paddingRight="@dimen/d_48">
+
+                <vn.kido.shop.IControl.IButton
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_40"
+                    android:foreground="?android:selectableItemBackground"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:background="@drawable/transparent_white_box"
+                    android:gravity="center"
+                    android:text="@string/signin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s_16"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <vn.kido.shop.IControl.IButton
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_40"
+                    android:layout_marginTop="@dimen/d_16"
+                    android:foreground="?android:selectableItemBackground"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:background="@drawable/transparent_white_box"
+                    android:gravity="center"
+                    android:text="@string/signup"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s_16"
+                    app:fontName="BRYANTLG_BOLD" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_16">
+
+                <ImageView
+                    android:layout_width="@dimen/d_32"
+                    android:layout_height="@dimen/d_32"
+                    android:layout_marginRight="@dimen/d_4"
+                    android:src="@drawable/ic_call_white" />
+
+                <vn.kido.shop.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_8"
+                    android:text="@string/support_customer"
+                    android:textColor="@color/white"
+                    app:fontName="BRYANTLG_NORMAL"
+                    android:textSize="@dimen/s_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

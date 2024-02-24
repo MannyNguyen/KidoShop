@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@color/white</item>-->
+        <item name="android:fitsSystemWindows">true</item>
+
+
+        <!--<item name="android:statusBarColor" tools:ignore="NewApi">@color/white</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Oauth">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/right_line</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+    <style name="NumberPicker">
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/s_20</item>
+        <item name="android:windowTitleBackgroundStyle">@color/gray_200</item>
+        <item name="android:colorBackground">@color/gray_200</item>
+        <item name="android:textColorPrimary">@color/main_gray</item>
+    </style>
+
+</resources>

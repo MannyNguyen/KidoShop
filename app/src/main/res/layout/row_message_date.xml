@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/d_12"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/d_1"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@color/gray_600" />
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/s_14" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/d_1"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@color/gray_600" />
+
+</LinearLayout>

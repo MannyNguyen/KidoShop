@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragment.Support.MenuSupportFragment">
+
+    <FrameLayout
+        android:id="@+id/outer_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"></FrameLayout>
+
+    <vn.kido.shop.IControl.ICardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/d_48"
+        android:layout_marginLeft="@dimen/d_12"
+        android:layout_marginRight="@dimen/d_48"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/d_8"
+        app:cardElevation="@dimen/d_4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d_12"
+                android:text="@string/support_question"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/s_14"
+                app:fontName="BRYANTLG_BOLD" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </vn.kido.shop.IControl.ICardView>
+
+</FrameLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Cart.UpdateQuantityFragment">
+
+    <FrameLayout
+        android:id="@+id/outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/d_28"
+            android:layout_height="@dimen/d_28"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/d_32"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_remove" />
+
+        <vn.kido.shop.IControl.ICardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/d_32"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginRight="@dimen/d_32"
+            android:clickable="true"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/d_32"
+            app:cardElevation="@dimen/d_4">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_update_quantity"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/d_12">
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/s_18"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_1"
+                    android:layout_marginLeft="@dimen/d_2"
+                    android:layout_marginRight="@dimen/d_2"
+                    android:background="@color/gray_400" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d_40"
+                        android:layout_gravity="center"
+                        android:alpha="0.3"
+                        android:background="@color/main"
+                        android:clickable="false" />
+
+                    <com.shawnlin.numberpicker.NumberPicker
+                        android:id="@+id/number_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d_16"
+                        android:layout_marginRight="@dimen/d_16"
+                        android:theme="@style/NumberPicker"></com.shawnlin.numberpicker.NumberPicker>
+
+
+                </FrameLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_1"
+                    android:layout_marginLeft="@dimen/d_2"
+                    android:layout_marginRight="@dimen/d_2"
+                    android:background="@color/gray_400" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/d_12">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <vn.kido.shop.IControl.ITextView
+                            android:id="@+id/unit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d_4"
+                            android:layout_weight="1"
+                            android:text="Nhập số lượng"
+                            android:textColor="@color/main_black"
+                            android:textSize="@dimen/s_14"
+                            app:fontName="BRYANTLG_BOLD" />
+
+                        <vn.kido.shop.IControl.IEdittext
+                            android:id="@+id/number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_gray_1_radius_8"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:minWidth="@dimen/d_60"
+                            android:padding="@dimen/d_6"
+                            android:textColor="@color/main_black"
+                            android:textSize="@dimen/s_14"
+                            app:fontName="BRYANTLG_BOLD" />
+                    </LinearLayout>
+
+                    <vn.kido.shop.IControl.IButton
+                        android:id="@+id/submit"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d_40"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/d_16"
+                        android:background="@drawable/background_button_red"
+                        android:foreground="?android:selectableItemBackground"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/d_40"
+                        android:paddingRight="@dimen/d_40"
+                        android:text="@string/confirm"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/s_14"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </vn.kido.shop.IControl.ICardView>
+    </LinearLayout>
+
+    <include layout="@layout/progress" />
+</FrameLayout>

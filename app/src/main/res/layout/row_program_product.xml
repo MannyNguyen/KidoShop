@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d_4"
+            android:layout_marginRight="@dimen/d_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/d_8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_8"
+                android:layout_weight="7.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <vn.kido.shop.IControl.ITextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Dầu ăn thánh Phồng jhgujgfj,gfjgf,gfjgfj"
+                            android:textColor="@color/gray_900"
+                            android:textSize="@dimen/s_16"
+                            app:fontName="BRYANTLG_BOLD" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/d_8"
+                                    android:orientation="horizontal">
+
+                                    <vn.kido.shop.IControl.ITextView
+                                        android:id="@+id/price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:lines="1"
+                                        android:text="100000"
+                                        android:textColor="@color/main"
+                                        android:textSize="@dimen/s_20"
+                                        app:fontName="BRYANTLG_BOLD" />
+
+                                    <vn.kido.shop.IControl.ITextView
+                                        android:id="@+id/min_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:lines="1"
+                                        android:text="(Thùng 12 chai)"
+                                        android:textColor="@color/main_black"
+                                        android:textSize="@dimen/s_16"
+                                        app:fontName="BRYANTLG_NORMAL" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/d_8"
+                                    android:orientation="horizontal">
+
+                                    <vn.kido.shop.IControl.ITextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:lines="1"
+                                        android:text="Tối đa"
+                                        android:textColor="@color/main_black"
+                                        android:textSize="@dimen/s_16"
+                                        app:fontName="BRYANTLG_NORMAL" />
+
+                                    <vn.kido.shop.IControl.ITextView
+                                        android:id="@+id/max_item_unit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/d_4"
+                                        android:lines="1"
+                                        android:text="10"
+                                        android:textColor="@color/main_black"
+                                        android:textSize="@dimen/s_20"
+                                        app:fontName="BRYANTLG_BOLD" />
+
+                                    <vn.kido.shop.IControl.ITextView
+                                        android:id="@+id/min"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/d_4"
+                                        android:lines="1"
+                                        android:text="chai"
+                                        android:textColor="@color/main_black"
+                                        android:textSize="@dimen/s_16"
+                                        app:fontName="BRYANTLG_NORMAL" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_attribute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/d_4"
+                                android:layout_marginBottom="@dimen/d_4"
+                                android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_1"
+            android:layout_marginRight="@dimen/d_1"
+            android:background="#f6cdcd"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d_8"
+            android:paddingTop="@dimen/d_2"
+            android:paddingRight="@dimen/d_8"
+            android:paddingBottom="@dimen/d_4">
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_payment"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/s_16" />
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/total_product_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="1,000,000"
+                android:textColor="@color/main"
+                android:textSize="@dimen/s_20"
+                app:fontName="BRYANTLG_BOLD" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

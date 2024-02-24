@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_44">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/tab_viewpager2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/d_4"
+                    app:tabPaddingTop="@dimen/d_4"
+                    app:tabPaddingStart="0dp"
+                    app:tabPaddingEnd="0dp"
+                    app:tabGravity="fill"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="fixed" />
+
+                <View
+                    android:layout_width="@dimen/d_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_400" />
+
+                <LinearLayout
+                    android:id="@+id/container_sort"
+                    android:layout_width="@dimen/d_44"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_increase"
+                        android:layout_width="@dimen/d_14"
+                        android:layout_height="@dimen/d_14"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_sort_increase_inactive" />
+
+                    <ImageView
+                        android:id="@+id/ic_descrease"
+                        android:layout_width="@dimen/d_14"
+                        android:layout_height="@dimen/d_14"
+                        android:layout_gravity="center_horizontal|top"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_sort_descrease_active" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

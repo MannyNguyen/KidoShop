@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    android:orientation="vertical"
+    tools:context=".Fragment.Notify.DetailNotifyFragment">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="@dimen/d_24">
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_notify_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/s_20"
+                app:fontName="BRYANTLG_BOLD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_20"
+                android:orientation="horizontal">
+
+                <vn.kido.shop.IControl.ITextView
+                    android:id="@+id/txt_notify_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/main_gray"
+                    android:textSize="@dimen/s_12"
+                    app:fontName="BRYANTLG_NORMAL" />
+
+                <vn.kido.shop.IControl.ITextView
+                    android:id="@+id/txt_notify_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_20"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/s_12"
+                    app:fontName="BRYANTLG_NORMAL" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_notify_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/d_2"
+                android:paddingRight="@dimen/d_2"
+                android:paddingLeft="@dimen/d_2"
+                android:layout_marginTop="@dimen/d_20"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_program_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin"
+                android:layout_marginTop="@dimen/d_20"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/s_20"
+                app:fontName="BRYANTLG_BOLD" />
+
+            <vn.kido.shop.IControl.ITextView
+                android:id="@+id/txt_notify_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_20"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/s_12"
+                app:fontName="BRYANTLG_NORMAL" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

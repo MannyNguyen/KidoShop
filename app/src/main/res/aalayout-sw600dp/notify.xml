@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notify"
+    android:layout_width="@dimen/d_52"
+    android:layout_height="@dimen/d_52"
+    android:foreground="?android:selectableItemBackground">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:foreground="?android:selectableItemBackground"
+        android:padding="@dimen/d_8"
+        android:scaleType="centerInside"
+        android:clickable="false"
+        android:src="@drawable/ic_notify_non" />
+
+    <vn.nip.kido.IControl.ITextView
+        android:id="@+id/number_noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/d_2"
+        android:minWidth="@dimen/d_20"
+        android:background="@drawable/background_number_notify"
+        android:gravity="center"
+        android:paddingBottom="@dimen/d_2"
+        android:paddingLeft="@dimen/d_8"
+        android:paddingRight="@dimen/d_8"
+        android:textColor="@color/main"
+        android:visibility="gone"
+        android:textSize="@dimen/s_14"
+        app:fontName="BRYANTLG_BOLD" />
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginBottom="@dimen/d_4"
+    android:layout_marginLeft="@dimen/d_48"
+    android:layout_marginRight="@dimen/d_12"
+    android:layout_marginTop="@dimen/d_4"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <vn.kido.shop.IControl.ICardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/d_12"
+        app:cardElevation="@dimen/d_1">
+
+        <vn.kido.shop.IControl.IImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+    </vn.kido.shop.IControl.ICardView>
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_4"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/s_12"
+        app:fontName="BRYANTLG_BOLD" />
+
+</LinearLayout>

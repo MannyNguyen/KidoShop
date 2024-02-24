@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_88"
+    android:background="@color/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/d_8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d_12"
+            android:orientation="vertical">
+
+            <include layout="@layout/home" />
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Kido Shop"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_14"
+                app:fontName="BRYANTLG_BOLD" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d_12"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_44"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <include layout="@layout/back" />
+
+                <include
+                    layout="@layout/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_weight="1" />
+
+                <include layout="@layout/notify" />
+
+                <include layout="@layout/cart" />
+
+            </LinearLayout>
+
+            <include layout="@layout/search" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>

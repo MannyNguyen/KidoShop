@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">KIDO Shop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="per_write_storage">Xin cấp quyền truy cập bộ nhớ cho Kido</string>
+    <string name="per_access_camera">Xin cấp quyền truy cập máy ảnh cho Kido</string>
+    <string name="per_access_location">Xin cấp quyền truy cập vị trí cho Kido</string>
+    <string name="open_location">Xin bật định vị</string>
+
+    <string name="news">Tin tức</string>
+    <string name="popular_news">Tin tức nổi bật</string>
+    <string name="add_to_cart">Thêm vào giỏ</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="order_code">Đơn hàng</string>
+    <string name="re_buy">Mua lại</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="feedback_247">Chăm sóc 24/7</string>
+    <string name="cancel">Hủy</string>
+    <string name="ok">Đồng ý</string>
+    <string name="attention">Thông báo</string>
+    <string name="can_claim">Bạn đã đủ điều kiện đổi quà</string>
+    <string name="not_can_claim">Bạn chưa đủ điều kiện đổi quà</string>
+    <string name="ignore">Bỏ qua</string>
+    <string name="request_login">Vui lòng đăng nhập để sử dụng tính năng này</string>
+
+    <!--Left menu-->
+    <string name="event_program">Chương trình</string>
+    <string name="history">Lịch sử mua hàng</string>
+    <string name="follow_order">Theo dõi đơn hàng</string>
+    <string name="order_news">Tin tức</string>
+    <string name="setting">Thiết lập</string>
+    <string name="customer">Khách hàng</string>
+
+    <!--Login/Register-->
+    <string name="enter_phone_num">Vui lòng nhập số điện thoại đã đăng ký</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="signup">Đăng ký</string>
+    <string name="signup_underline"><u>Đăng ký</u></string>
+    <string name="signup_info">Thông tin đăng ký</string>
+    <string name="last_name">Họ</string>
+    <string name="full_name">Họ &amp; Tên</string>
+    <string name="register_full_name">Họ &amp; Tên *</string>
+    <string name="store">Cửa hàng</string>
+    <string name="register_store">Tên cửa hàng *</string>
+    <string name="register_address">Địa chỉ cửa hàng *</string>
+    <string name="register_city">Tỉnh thành</string>
+    <string name="register_city_re">Tỉnh thành *</string>
+    <string name="register_district">Quận / Huyện</string>
+    <string name="register_district_re">Quận / Huyện *</string>
+    <string name="register_country">Phường / Xã</string>
+    <string name="register_country_re">Phường / Xã *</string>
+    <string name="register_phone">Số điện thoại *</string>
+    <string name="email">Email</string>
+    <string name="notice">Lưu ý:</string>
+    <string name="notice_content">Bạn sẽ nhận được mã ký tự qua tin nhắn gồm 4 ký tự, vui lòng điền vào ô xác nhận để hoàn tất đăng ký</string>
+    <string name="agree_license_1">Tôi đồng ý với</string>
+    <string name="agree_license_2">Điều khoản sử dụng</string>
+    <string name="agree_license_4">Chính sách bảo mật</string>
+    <string name="agree_license_5">của</string>
+    <string name="agree_license_6">Kido shop</string>
+    <string name="signup_success">Đăng ký thành công</string>
+    <string name="start">Bắt đầu</string>
+    <string name="congratulation">Chúc mừng</string>
+    <string name="success_content">Bạn đã đăng ký thành công tài khoản</string>
+    <string name="success_content_2">Bạn có thể nhận thông tin chương trình khuyến mãi và đặt hàng ngay bây giờ</string>
+    <string name="confirm_content">Mã xác nhận đã được gửi tới số điện thoại đăng ký</string>
+    <string name="enter_otp">Vui lòng điền mã xác nhận vào dòng bên dưới</string>
+    <string name="otp">Mã xác nhận</string>
+    <string name="not_receive_otp">Không nhận được mã xác nhận</string>
+    <string name="resend">Gửi lại</string>
+    <string name="support_customer"><u>Gọi chăm sóc khách hàng</u></string>
+    <string name="no_region">Vui lòng chọn tỉnh thành</string>
+    <string name="choose_server">Vui lòng chọn server</string>
+    <string name="dev_server">Dev</string>
+    <string name="test_server">Test</string>
+    <string name="real_server">Real</string>
+    <string name="alert_update">Vui lòng cập nhật phiên bản mới để trải nghiệm toàn bộ tính năng của KIDO SHOP</string>
+    <string name="customer_code">Mã đăng ký</string>
+    <string name="request_code">Vui lòng liên hệ nhân viên KIDO để được cấp mã đăng ký</string>
+    <string name="require_customer_code">Vui lòng nhập mã khách hàng</string>
+    <string name="require_login">Vui lòng đăng nhập để sử dụng tính năng này</string>
+    <string name="require_info">Nhập thông tin</string>
+    <string name="require_name">Vui lòng nhập họ tên</string>
+    <string name="require_shop_name">Vui lòng nhập tên cửa hàng</string>
+    <string name="policy_url">https://www.kdc.vn/dieu-khoan-su-dung</string>
+    <string name="enter_customer_code">Nhập mã đăng ký</string>
+
+    <!--Profile-->
+    <string name="profile_page">Trang cá nhân</string>
+    <string name="total_expenditure">Tổng chi</string>
+    <string name="score">Điểm thưởng</string>
+    <string name="change_gift">Đổi quà</string>
+    <string name="phone_signin">Số điện thoại (đăng nhập)</string>
+    <string name="phone_vice">Số điện thoại (dự phòng)</string>
+    <string name="address_delivery">Địa chỉ giao hàng (mặc định)</string>
+    <string name="see_limits">Xem các hạn mức</string>
+    <string name="see_gift">Xem quà tặng</string>
+    <string name="point">Điểm</string>
+    <string name="update">Cập nhật</string>
+    <string name="changeimage">Thay hình</string>
+
+    <!--Search-->
+    <string name="search">Tìm kiếm</string>
+    <string name="product_type">Ngành hàng</string>
+    <string name="product">Sản phẩm</string>
+    <string name="product_2">Mặt hàng</string>
+    <string name="enter_keyword">Vui lòng nhập từ khóa</string>
+    <string name="total_money">Tổng tiền</string>
+    <string name="real_receive">Thực nhận</string>
+    <string name="new_product">Sản phẩm mới</string>
+    <string name="popular_product">Sản phẩm nổi bật</string>
+    <string name="code_order">Mã đơn hàng</string>
+    <string name="verify_code">Mã xác nhận: </string>
+    <string name="send_response">Gửi phản hồi</string>
+    <string name="information_delivery">Thông tin giao nhận</string>
+    <string name="total">Tổng cộng</string>
+    <string name="receive_success">Nhận Hàng Thành Công</string>
+    <string name="receive_time">Nhận lúc:</string>
+    <string name="back">Quay về</string>
+    <string name="report">Báo cáo</string>
+    <string name="gift">Hàng tặng</string>
+    <string name="this_give_not_sales">Hàng tặng không bán</string>
+    <string name="detail_combo">Xem chi tiết Combo</string>
+    <string name="collipped">Rút gọn</string>
+    <string name="bonus_point">Điểm thưởng</string>
+    <string name="discount">Khuyến mãi</string>
+    <string name="real_pay">Thực trả</string>
+    <string name="see_more">Xem thêm</string>
+    <string name="order">Đặt hàng</string>
+    <string name="order_success">Đặt Hàng Thành Công</string>
+    <string name="dialog_order_success1">Đơn hàng của bạn đã được gửi thành công</string>
+    <string name="dialog_order_success2">Chúng tôi sẽ cập nhật cho bạn về tình trạng đơn hàng sớm nhất</string>
+    <string name="back_to_home">Quay về trang chủ</string>
+    <string name="sale_group">KM theo sản phẩm</string>
+    <string name="sale_order">KM đơn hàng</string>
+    <string name="search_program">Chương trình</string>
+    <string name="search_product">Tìm kiếm sản phẩm</string>
+    <string name="search_news">Tin tức</string>
+    <string name="search_label">Loại sản phẩm</string>
+    <string name="search_no_data">Kết quả bạn vừa tìm kiếm không có. \nVui lòng chọn từ khóa khác</string>
+    <string name="update_info">Cập nhật thông tin</string>
+
+    <!--Program-->
+    <string name="program">Chương trình</string>
+    <string name="suggest_program">Chương trình gợi ý</string>
+    <string name="processing_program">Chương trình đang chạy</string>
+    <string name="number">Số lượng</string>
+    <string name="input_note">Nhập ghi chú</string>
+    <string name="note">Ghi chú</string>
+    <string name="detail_event">Chi tiết chương trình</string>
+    <string name="no_event">Hiện tại chưa có chương trình nào</string>
+
+    <!--News-->
+    <string name="all">Tất cả</string>
+    <string name="today">Mới nhất</string>
+    <string name="saved">Đã lưu</string>
+
+    <!--History-->
+    <string name="most_buy">Mua nhiều</string>
+    <string name="last_buy">Mới mua</string>
+    <string name="no_product_history">Bạn không có mặt hàng nào</string>
+    <string name="no_order_history">Bạn không có đơn hàng nào</string>
+
+    <!--Follow order-->
+    <string name="sending">Đang giao</string>
+    <string name="sent">Đã giao</string>
+    <string name="require">Bắt buộc</string>
+    <string name="require_retail">Vui lòng chọn và nhập lý do trả hàng</string>
+    <string name="require_cancel">Vui lòng chọn và nhập lý do hủy đơn hàng</string>
+    <string name="vat_notice">Giá trên đã bao gồm thuế VAT 10%</string>
+    <string name="confirm_product">Xác nhận hàng hóa</string>
+    <string name="content_confirm_product">Tôi xác nhận đã nhận hàng đầy đủ theo số lượng trên. Hàng hóa được giao đúng quy cách, không hư hỏng, còn hạn sử dụng theo qui định</string>
+    <string name="content_receive_success_product">
+        Cảm ơn bạn đã tin tưởng và sử dụng Kido\nĐơn hàng của bạn đã được lưu vào Lịch Sử Mua Hàng\nNếu có thắc mắc hay khiếu nại gì về đơn hàng này, xin hãy nhấn \"Báo cáo\" để được giúp đỡ
+    </string>
+    <string name="waiting_confirm">Chờ xác nhận</string>
+    <string name="product_num">Mặt hàng</string>
+    <string name="product_hornor">Hàng tặng</string>
+    <string name="pay_number">Số tiền phải trả</string>
+    <string name="pay_all_order">Trả nguyên đơn</string>
+    <string name="order_code_pay">Mã đơn hàng trả</string>
+    <string name="no_order_follow">Bạn không có đơn hàng nào</string>
+
+    <!--Kpoint/Rank-->
+    <string name="kpoint">Kpoint</string>
+    <string name="you_have">Bạn đang có</string>
+    <string name="you_purchase">Bạn đã chi</string>
+    <string name="kpoint_slogan">Mua nhiều để nhận càng nhiều hơn với</string>
+    <string name="accumulation_2">* Tích lũy</string>
+    <string name="more_point">Nhận thêm càng nhiều điểm với</string>
+    <string name="kido_shop">KIDO Shop ></string>
+    <string name="receive_gift">Nhận quà</string>
+    <string name="rank_customer">Hạng khách hàng</string>
+    <string name="rank_next_1">Mua thêm</string>
+    <string name="rank_next_2">để trở thành khách hàng</string>
+    <string name="expen_date">Tổng chi sẽ được reset vào ngày</string>
+    <string name="gift_title">Hàng tặng</string>
+    <string name="gift_title_order">Hàng tặng theo đơn hàng</string>
+    <string name="gift_dialog_1">Quà đã được thêm vào đơn hàng</string>
+    <string name="gift_dialog_2">Quà sẽ được giao cùng với đơn hàng tiếp theo</string>
+    <string name="new_member">Thành viên mới</string>
+    <string name="silver">Bạc</string>
+    <string name="gold">Vàng</string>
+    <string name="titan">Bạch kim</string>
+
+    <!--Detail product-->
+    <string name="detail_product">Chi tiết sản phẩm</string>
+    <string name="product_info">Mô tả sản phẩm</string>
+    <string name="same_product">Sản phẩm tương tự</string>
+    <string name="forecast_delivery">Dự kiến giao</string>
+    <string name="see_detail">Xem chi tiết >></string>
+    <string name="element">Thành phần</string>
+    <string name="nutrition_info">Thông tin dinh dưỡng</string>
+    <string name="manual">Hướng dẫn sử dụng</string>
+    <string name="storage_condition">Điều kiện bảo quản</string>
+    <string name="total_payment">Thành tiền:</string>
+    <string name="quantity_product">/Sản phẩm</string>
+    <string name="quantity">Số lượng</string>
+    <string name="name_product">Tên hàng</string>
+    <string name="unit_price">Đơn giá</string>
+    <string name="money_vnd">Thành tiền\n(VND)</string>
+    <string name="exist_in_cart">Sản phẩm này đã có trong giỏ hàng \n Kiểm tra giỏ hàng ngay bây giờ?</string>
+
+    <!--Detail order-->
+    <string name="detail_order">Chi tiết đơn hàng</string>
+    <string name="order_receiver">Người nhận</string>
+    <string name="order_address">Địa chỉ</string>
+    <string name="order_phone">Điện thoại</string>
+    <string name="total_pay">Tổng thanh toán</string>
+    <string name="confirm_otp_code">*Vui lòng cung cấp mã xác nhận cho nhân viên giao hàng</string>
+    <string name="after_discount">Sau chiết khấu</string>
+    <string name="return_order">Trả đơn hàng</string>
+    <string name="shipper">Người giao:</string>
+    <string name="shipper_phone">Điện thoại:</string>
+    <string name="cancel_order">Hủy đơn hàng</string>
+    <string name="receiver">Người nhận:</string>
+
+    <!--Support-->
+    <string name="takecare_24">Chăm sóc 24/7</string>
+    <string name="enter_message">Gửi tin nhắn trực tiếp...</string>
+    <string name="support_question">Bạn có thắc mắc về</string>
+    <string name="phone_support">02871060708</string>
+
+
+    <string name="remove_all_product_in_cart">Xóa sản phẩm này ra khỏi giỏ hàng</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="option">Điều chỉnh ứng dụng</string>
+
+    <string name="notify">Thông báo</string>
+    <string name="select_language">Tùy chọn hiển thị ngôn ngữ trên KIDO SHOP</string>
+    <string name="option_message_notify">Nhận các thông báo về Trạng Thái Đơn Hàng, Chương Trình HOT và Tin Tức HOT mọi lúc mọi nơi</string>
+    <string name="option_receive_notify">Nhận thông báo từ KIDO SHOP</string>
+    <string name="option_tutorial">Hướng dẫn sử dụng KIDO SHOP</string>
+    <string name="option_message_tutorial">Sử dụng KIDO SHOP hiệu quả và tiện lợi với tất cả tính năng</string>
+
+    <!--Confirm order-->
+    <string name="info_order">Thông tin đặt hàng</string>
+    <string name="info_receive_order">Thông tin nhận hàng</string>
+    <string name="receive_red_order">Nhận hóa đơn đỏ</string>
+    <string name="enter_tax_code">Nhập Mã Số Thuế</string>
+    <string name="enter_note">Nhập ghi chú...</string>
+    <string name="enter_reason">Nhập lý do</string>
+    <string name="confirm_receiver">Tên khách hàng:</string>
+    <string name="shop_name">Tên cửa hàng:</string>
+    <string name="shop_name1">Tên cửa hàng</string>
+    <string name="confirm_address">Địa chỉ:</string>
+    <string name="confirm_phone">Điện thoại:</string>
+    <string name="num_order">Mặt hàng</string>
+    <string name="title_rate">Bạn có hài lòng về dịch vụ?</string>
+    <string name="money_KM">Tiền KM:</string>
+    <string name="remain_KM">KM còn lại</string>
+    <string name="difference_can">Chênh lệch cho phép</string>
+    <string name="name_shop">Tên shop:</string>
+    <string name="city">Tỉnh/thành:</string>
+    <string name="district">Quận/huyện:</string>
+    <string name="ward">Phường/xã:</string>
+    <string name="receive_address">Địa chỉ giao hàng:</string>
+    <string name="require_address">Vui lòng nhập địa chỉ</string>
+
+    <!--Change/pay product-->
+    <string name="change_pay_product">Đổi/trả hàng</string>
+    <string name="change_product_single">Đổi hàng</string>
+    <string name="pay_product_single">Trả hàng</string>
+    <string name="pay_full_order">Trả nguyên đơn</string>
+    <string name="policy_change_product">Quy định đổi hàng</string>
+    <string name="policy_pay_product">Quy định trả hàng</string>
+    <string name="policy_pay_full_order">Quy định trả nguyên đơn</string>
+    <string name="new_order">Đơn hàng</string>
+    <string name="reason_change">Lý do trả:</string>
+    <string name="reason">Lý do:</string>
+    <string name="no_return_order">Bạn không có đơn hàng đã hoàn tất trong 5 ngày gần nhất</string>
+    <string name="no_return_order_45">Bạn không có sản phẩm nào được mua trong vòng 45 ngày</string>
+    <string name="enter_full_info">Vui lòng nhập đầy đủ hạn sử dụng và lý do của từng sản phẩm</string>
+    <string name="choose_product_change">Vui lòng chọn sản phẩm đổi/trả</string>
+    <string name="policy">Chính sách đổi trả hàng</string>
+    <string name="status_guest">Đăng nhập để xem giá</string>
+    <string name="login_guest">ĐĂNG NHẬP để có trải nghiệm tốt nhất</string>
+    <string name="logout">Đăng xuất</string>
+
+    <!--Highlight product-->
+    <string name="highlight_product">Sản phẩm nổi bật</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

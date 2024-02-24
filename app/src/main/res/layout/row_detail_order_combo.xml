@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.kido.shop.IControl.ICardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d_4"
+    android:layout_marginLeft="@dimen/d_8"
+    android:layout_marginRight="@dimen/d_8"
+    android:layout_marginTop="@dimen/d_4"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="@dimen/d_6"
+    app:cardElevation="@dimen/d_4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/d_8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/d_4"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <vn.kido.shop.IControl.ITextView
+                    android:id="@+id/program"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_24"
+                    android:background="@drawable/background_program"
+                    android:gravity="center"
+                    android:text="@string/program"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s_11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/d_8"
+                    android:orientation="vertical">
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/s_14"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d_4"
+                        android:orientation="horizontal">
+
+                        <vn.kido.shop.IControl.ITextView
+                            android:id="@+id/old_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/main_black"
+                            android:textSize="@dimen/d_12" />
+
+                        <vn.kido.shop.IControl.ITextView
+                            android:id="@+id/attribute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d_4"
+                            android:textColor="@color/main_black"
+                            android:textSize="@dimen/d_12" />
+
+                    </LinearLayout>
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:id="@+id/kpoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d_4"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/d_12" />
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d_4"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/s_16"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                </LinearLayout>
+
+                <vn.kido.shop.IControl.ITextView
+                    android:id="@+id/number_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="@dimen/d_4"
+                    android:paddingRight="@dimen/d_4"
+                    android:textSize="@dimen/s_14"
+                    android:textColor="@color/main_gray"
+                    app:fontName="BRYANTLG_BOLD" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_expand_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/d_8"
+            android:layout_marginRight="@dimen/d_12"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/d_20"
+                android:layout_height="@dimen/d_20"
+                android:padding="@dimen/d_4"
+                android:src="@drawable/ic_expand_icon" />
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_combo"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/s_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/child_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d_8"
+                android:layout_marginLeft="@dimen/d_12"
+                android:layout_marginRight="@dimen/d_12"
+                android:layout_marginTop="@dimen/d_8"
+                android:background="@drawable/white_border_box"
+                android:paddingRight="@dimen/d_8"
+                android:paddingTop="@dimen/d_12">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/gift_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/d_20"
+                        android:layout_height="@dimen/d_20"
+                        android:layout_marginLeft="@dimen/d_12"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_gift_outer_active"/>
+
+                    <vn.kido.shop.IControl.ITextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d_4"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/gift"
+                        android:textColor="@color/main_gray"
+                        android:textSize="@dimen/s_12"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gift_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d_8"
+                    android:layout_marginLeft="@dimen/d_12"
+                    android:layout_marginRight="@dimen/d_12"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:background="@drawable/white_border_box"
+                    android:paddingRight="@dimen/d_8"
+                    android:paddingTop="@dimen/d_12">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_collapse_combo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/d_8"
+                android:layout_marginRight="@dimen/d_12"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/d_20"
+                    android:layout_height="@dimen/d_20"
+                    android:padding="@dimen/d_4"
+                    android:src="@drawable/ic_expand_grey_up" />
+
+                <vn.kido.shop.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collipped"
+                    android:textColor="@color/main_gray"
+                    android:textSize="@dimen/s_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</vn.kido.shop.IControl.ICardView>

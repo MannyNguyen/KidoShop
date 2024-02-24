@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_8"
+        android:layout_marginRight="@dimen/d_8"
+        android:background="@drawable/background_tab_inactive"
+        android:orientation="vertical">
+
+        <vn.kido.shop.IControl.ITextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/d_30"
+            android:paddingTop="@dimen/d_12"
+            android:paddingRight="@dimen/d_30"
+            android:paddingBottom="@dimen/d_12"
+            android:text=""
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/d_14"
+            app:fontName="BRYANTLG_BOLD" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/active"
+        android:layout_width="@dimen/d_16"
+        android:layout_height="@dimen/d_16"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/check_icon" />
+
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/d_80"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_attribute"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/d_6">
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="thung"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/s_14"
+        app:fontName="BRYANTLG_BOLD" />
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/s_16"
+        app:fontName="BRYANTLG_BOLD" />
+
+</LinearLayout>

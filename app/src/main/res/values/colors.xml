@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef1820</color>
+    <color name="colorPrimaryDark">#ef1820</color>
+    <color name="main">#ef1820</color>
+    <color name="main_yellow">#fff6b6</color>
+    <color name="main_dark">#990000</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000</color>
+    <color name="main_black">#1d1d1d</color>
+    <color name="main_gray">#3f3e3e</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_900">#212121</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_50">#FAFAFA</color>
+    <color name="left_background">#faebeb</color>
+
+    <color name="yellow_500">#FFEB3B</color>
+    <color name="customer_new">#ed1c24</color>
+    <color name="customer_silver">#aee4f9</color>
+    <color name="customer_gold">#ffe400</color>
+    <color name="customer_titan">#8393ca</color>
+
+    <color name="left_line">#C10000</color>
+    <color name="right_line">#FF757A</color>
+    <color name="banner_pink">#faebeb</color>
+    <color name="red_500">#F44336</color>
+</resources>

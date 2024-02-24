@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_120"
+    android:background="@color/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/d_8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/home"
+                android:layout_width="@dimen/d_120"
+                android:layout_height="@dimen/d_60"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:foreground="?android:selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/kd_logo_white" />
+
+            <vn.nip.kido.IControl.ITextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Kido Shop"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_22"
+                app:fontName="BRYANTLG_BOLD" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_60"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/menu"
+                    android:layout_width="@dimen/d_60"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:foreground="?android:selectableItemBackground"
+                    android:paddingRight="@dimen/d_24"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu_icon" />
+
+                <vn.nip.kido.IControl.ITextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Kido Shop"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d_28"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <include layout="@layout/notify" />
+
+                <include layout="@layout/cart" />
+
+            </LinearLayout>
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/main"
+                android:foreground="?android:selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/d_6"
+                    android:background="@drawable/background_white_radius_4">
+
+                    <ImageButton
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_width="@dimen/d_60"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:background="@drawable/background_gray_200_radius_4"
+                        android:clickable="false"
+                        android:padding="@dimen/d_8"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/search_icon" />
+
+                </FrameLayout>
+
+                <vn.nip.kido.IControl.ITextView
+                    android:id="@+id/edt_key_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/d_8"
+                    android:text="@string/search_product"
+                    android:textColor="@color/gray_400"
+                    android:textSize="@dimen/s_24"
+                    app:fontName="BRYANTLG_NORMAL" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>

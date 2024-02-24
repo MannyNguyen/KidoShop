@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Fragment.Cart.VerifyCartFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container_confirm_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/d_16"
+            android:background="@drawable/white_radius_box"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/d_16">
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/order_success"
+                android:textColor="@color/main"
+                android:textSize="@dimen/s_18"
+                app:fontName="BRYANTLG_BOLD" />
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16"
+                android:text="@string/dialog_order_success1"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/s_14"
+                app:fontName="BRYANTLG_BOLD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_12"
+                android:orientation="horizontal">
+
+                <vn.kido.shop.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d_8"
+                    android:text="@string/order_code"
+                    android:textColor="@color/main_gray"
+                    android:textSize="@dimen/s_16"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <vn.kido.shop.IControl.ITextView
+                    android:id="@+id/order_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/s_18"
+                    app:fontName="BRYANTLG_BOLD" />
+
+            </LinearLayout>
+
+            <vn.kido.shop.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_12"
+                android:text="@string/dialog_order_success2"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/s_14"
+                app:fontName="BRYANTLG_BOLD" />
+
+        </LinearLayout>
+
+        <vn.kido.shop.IControl.IButton
+            android:id="@+id/back_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d_16"
+            android:background="@drawable/main_box"
+            android:paddingLeft="@dimen/d_40"
+            android:paddingRight="@dimen/d_40"
+            android:text="@string/back_to_home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_16"
+            app:fontName="BRYANTLG_BOLD" />
+
+    </LinearLayout>
+
+    <include layout="@layout/progress" />
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragment.Search.ChildSearchFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d_8">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/d_160"
+            android:layout_height="@dimen/d_160"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/search_icon_gray"/>
+
+        <vn.kido.shop.IControl.ITextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/d_80"
+            android:text="@string/search_no_data"
+            android:textSize="@dimen/s_20"
+            android:textColor="@color/main_black"
+            app:fontName="BRYANTLG_NORMAL"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/progress" />
+
+</FrameLayout>

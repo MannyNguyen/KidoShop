@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_row_quantity"
+    android:layout_width="@dimen/d_120"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/d_2"
+    android:background="@drawable/gray_border_chatbox"
+    android:gravity="center">
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/txt_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s_16"
+        android:textColor="@color/main_black"
+        android:text="Hộp"
+        android:lines="1"
+        app:fontName="BRYANTLG_BOLD"/>
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/txt_max_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s_11"
+        android:textColor="@color/main_gray"
+        android:text="Hộp"
+        android:lines="1"
+        app:fontName="BRYANTLG_BOLD"/>
+
+    <vn.kido.shop.IControl.ITextView
+        android:id="@+id/txt_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s_16"
+        android:textColor="@color/main_black"
+        android:text="1"
+        android:lines="1"
+        app:fontName="BRYANTLG_BOLD"/>
+
+</LinearLayout>

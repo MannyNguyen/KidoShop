@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:visibility="gone">
+
+    <ProgressBar
+        android:layout_width="@dimen/d_100"
+        android:layout_height="@dimen/d_100"
+        android:layout_gravity="center"
+        android:background="@drawable/background_radius_gray300"
+        android:indeterminate="true"
+        android:progressTint="@color/main" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/d_84"
+        android:layout_height="@dimen/d_84"
+        android:layout_gravity="center"
+        android:padding="@dimen/d_4"
+        android:src="@color/white" />
+
+    <ImageView
+        android:layout_width="@dimen/d_50"
+        android:layout_height="@dimen/d_50"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_loading" />
+
+</FrameLayout>

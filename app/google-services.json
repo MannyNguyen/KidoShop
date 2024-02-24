@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "53989043405",
+    "firebase_url": "https://kido-kdc.firebaseio.com",
+    "project_id": "kido-kdc",
+    "storage_bucket": "kido-kdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53989043405:android:c64a53c5ef061afd",
+        "android_client_info": {
+          "package_name": "vn.kido.ship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53989043405-tfm03u3ffqfs5es4opakf5ugi1o27s4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfiotVN8sVh9f471Q0SwpYhCHFcuvXS7Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53989043405:android:87c414be41c63c45",
+        "android_client_info": {
+          "package_name": "vn.kido.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53989043405-tfm03u3ffqfs5es4opakf5ugi1o27s4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfiotVN8sVh9f471Q0SwpYhCHFcuvXS7Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

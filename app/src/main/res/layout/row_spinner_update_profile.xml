@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.kido.shop.IControl.ITextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/d_4"
+    android:paddingBottom="@dimen/d_4"
+    android:paddingTop="@dimen/d_4"
+    android:textColor="@color/main_black"
+    android:textSize="@dimen/s_14"
+    app:fontName="BRYANTLG_BOLD" />

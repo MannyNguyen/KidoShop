@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.Order.Change.ConfirmRetailOrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_back" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_44"
+                    android:background="@color/white">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/tab_viewpager2" />
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/d_4"
+                            app:tabGravity="fill"
+                            app:tabMaxWidth="0dp"
+                            app:tabMode="scrollable"
+                            app:tabPaddingEnd="0dp"
+                            app:tabPaddingStart="0dp"
+                            app:tabPaddingTop="@dimen/d_4"
+                            app:tabSelectedTextColor="@color/main"
+                            app:tabTextColor="@color/white" />
+                    </FrameLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray_200" />
+
+                        <vn.kido.shop.IControl.IButton
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d_40"
+                            android:layout_gravity="bottom"
+                            android:background="@color/main"
+                            android:text="@string/confirm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/s_16"
+                            app:fontName="BRYANTLG_BOLD" />
+                    </LinearLayout>
+
+                    <include layout="@layout/progress" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
